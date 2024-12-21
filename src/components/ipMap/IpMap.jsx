@@ -2,10 +2,26 @@ import "./IpMap.css";
 
 // Library imports
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import icon from "leaflet/dist/images/marker-icon.png";
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 // React imports
 import { useEffect } from "react";
+
+// Default icon configuration
+const DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41],
+});
+
+// Set the default icon for all markers
+L.Marker.prototype.options.icon = DefaultIcon;
 
 // Utility component to handle map position updates
 function MapUpdater({ center }) {
