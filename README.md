@@ -1,6 +1,6 @@
 # GeoTracker: Locate Your IP and Domain
 
-GeoTracker is a powerful React-based application that allows users to track IP addresses and domains, visualize their geolocation on an interactive map, and view detailed information like timezone, ISP, and more.
+GeoTracker is a powerful React-based application that allows users to track IP addresses and domains, visualize their geolocation on an interactive map, and view detailed information like timezone, ISP, and more. The app includes built-in rate limiting to ensure stable and sustainable service for all users.
 
 ---
 
@@ -19,6 +19,7 @@ GeoTracker helps you:
 - Find the geolocation of any IP address or domain.
 - Visualize the location on an interactive map.
 - Get details like city, country, timezone, and ISP.
+- Manage API usage with smart daily rate limiting.
 
 Built using modern web technologies to ensure performance and reliability.
 
@@ -80,6 +81,11 @@ _Dhrubajyoti Bhattacharjee_
 - Search for any IP address or domain.
 - Interactive map with markers for precise geolocation.
 - Displays key information like city, country, timezone, and ISP.
+- Smart rate limiting system:
+  - 15 requests per day limit to ensure API sustainability
+  - Automatic counter reset at midnight
+  - Visual indicator when approaching the daily limit
+  - Clear feedback when limit is reached
 
 ## 🌟 Future Updates
 

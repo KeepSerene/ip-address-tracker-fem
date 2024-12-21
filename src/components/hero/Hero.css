@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y: visible;
+
+  position: relative;
 }
 
 .hero-wrapper {
@@ -16,6 +18,19 @@
   font-size: 1.5rem;
   font-weight: var(--fw-semi-bold);
   text-align: center;
+}
+
+.remaining-requests-text {
+  background-color: hsla(var(--white) / 0.5);
+  color: hsl(var(--very-dark-gray));
+  font-size: 0.75rem;
+  font-weight: var(--fw-semi-bold);
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
 }
 
 .loading-text {
@@ -38,5 +53,13 @@
 
   .hero-title {
     font-size: 2rem;
+  }
+
+  .remaining-requests-text {
+    padding: 0.25rem;
+
+    left: auto;
+    top: 1rem;
+    right: 1rem;
   }
 }

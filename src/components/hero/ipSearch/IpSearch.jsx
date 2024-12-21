@@ -9,15 +9,30 @@ function IpSearch({ fetchIpData }) {
   const [query, setQuery] = useState("");
   const [isSearching, setIsSearching] = useState(false);
 
-  const isValidQuery = (input) => /^[0-9.]+$/.test(input);
+  const isValidIp = (input) => {
+    const ipRegex = /^(\d{1,3}\.){3}\d{1,3}$/;
+
+    return ipRegex.test(input);
+  };
+
+  const isValidDomain = (input) => {
+    const domainRegex =
+      /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
+
+    return domainRegex.test(input);
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsSearching(true);
+    const processedQuery = query.trim().toLowerCase();
+    let searchQuery;
 
-    const searchQuery = isValidQuery(query)
-      ? `ipAddress=${query.trim()}`
-      : `domain=${query.trim()}`;
+    if (isValidIp(processedQuery)) {
+      searchQuery = `ipAddress=${processedQuery}`;
+    } else if (isValidDomain(processedQuery)) {
+      searchQuery = `domain=${processedQuery}`;
+    }
 
     try {
       await fetchIpData(searchQuery);

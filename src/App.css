@@ -6,16 +6,8 @@
 .wrapper {
   max-width: 62rem; /* 992px */
   width: calc(100% - 2rem);
-  padding-block: 1rem;
+  padding-block: 2rem 1rem;
   margin-inline: auto;
-}
-
-/* Responsiveness */
-/* Screen sizes >= 768px */
-@media screen and (width >= 48em) {
-  .wrapper {
-    padding-block: 2rem 1rem;
-  }
 }
 
 .sr-only {
