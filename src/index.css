@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  /* Fonts */
+  --ff: "Rubik", sans-serif;
+
+  /* Typography */
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  /* Colors - HSL values */
+  --very-dark-gray: 0 0% 17%;
+  --dark-gray: 0 0% 59%;
+  --white: 0 0% 100%;
+  --neutral-white: 0 0% 97%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+figure,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+  line-height: 1.5;
+}
+
+body {
+  background-color: hsl(var(--neutral-white));
+  color: hsl(var(--dark-gray));
+  font-family: var(--ff);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+}

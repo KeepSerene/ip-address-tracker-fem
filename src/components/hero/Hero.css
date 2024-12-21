@@ -1,0 +1,42 @@
+.hero {
+  height: 16rem;
+  background-image: url("/images/pattern-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: visible;
+}
+
+.hero-wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-title {
+  color: hsl(var(--white));
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+}
+
+.loading-text {
+  color: hsl(var(--white));
+  text-align: center;
+}
+
+.error-text {
+  color: hsl(var(--white));
+  text-align: center;
+}
+
+/* Responsiveness */
+/* Screen sizes >= 768px */
+@media screen and (width >= 48em) {
+  .hero {
+    height: 13rem;
+    background-image: url("/images/pattern-bg-desktop.png");
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}

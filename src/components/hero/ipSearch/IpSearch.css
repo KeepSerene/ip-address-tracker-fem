@@ -1,0 +1,55 @@
+.ip-search-form {
+  width: 100%;
+  margin-inline: auto;
+
+  position: relative;
+}
+
+#ip-input {
+  width: 100%;
+  color: hsl(var(--dark-gray));
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem 1rem;
+
+  transition: color 250ms ease-in-out;
+}
+
+#ip-input:focus-within {
+  color: hsl(var(--very-dark-gray));
+  outline: none;
+}
+
+.search-btn {
+  background-color: hsl(var(--very-dark-gray));
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1.05rem 1.2rem;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  transition: background-color 250ms ease-in-out;
+}
+
+.search-btn:where(:hover, :focus-visible) {
+  background-color: hsl(var(--dark-gray));
+}
+
+.search-btn:disabled {
+  background-color: hsl(var(--dark-gray));
+}
+
+.search-btn:disabled:where(:hover, :focus-visible) {
+  cursor: not-allowed;
+}
+
+/* Responsiveness */
+/* Screen sizes >= 768px */
+@media screen and (width >= 48rem) {
+  .ip-search-form {
+    width: 25rem; /* 400px */
+  }
+}

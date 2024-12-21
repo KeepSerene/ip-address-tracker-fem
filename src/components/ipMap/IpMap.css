@@ -1,0 +1,12 @@
+#map-container {
+  width: 100%;
+  height: calc(100% - 16rem); /* Subtract hero height */
+}
+
+/* Responsiveness */
+/* Screen sizes >= 768px */
+@media screen and (width >= 48em) {
+  #map-container {
+    height: calc(100% - 13rem);
+  }
+}

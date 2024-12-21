@@ -1,0 +1,29 @@
+.app {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.wrapper {
+  max-width: 62rem; /* 992px */
+  width: calc(100% - 2rem);
+  padding-block: 1rem;
+  margin-inline: auto;
+}
+
+/* Responsiveness */
+/* Screen sizes >= 768px */
+@media screen and (width >= 48em) {
+  .wrapper {
+    padding-block: 2rem 1rem;
+  }
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  position: absolute;
+  left: -99999px;
+  top: auto;
+}
