@@ -49,7 +49,7 @@ function App() {
 
       if (!checkRateLimit()) {
         throw new Error(
-          "Daily request limit reached. Please try again tomorrow."
+          "Daily request limit reached! Please try again tomorrow."
         );
       }
 
