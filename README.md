@@ -8,13 +8,9 @@ GeoTracker is a powerful React-based application that allows users to track IP a
 
 [GeoTracker Live](https://your-live-demo-link.com)
 
----
-
 ## 📸 Screenshot
 
-![App Screenshot](./path-to-screenshot.png)
-
----
+![App Screenshot](./public/geo-tracker-home.png)
 
 ## 📚 Overview
 
@@ -25,8 +21,6 @@ GeoTracker helps you:
 - Get details like city, country, timezone, and ISP.
 
 Built using modern web technologies to ensure performance and reliability.
-
----
 
 ## 🛠️ Tech Stack
 
@@ -41,7 +35,7 @@ Built using modern web technologies to ensure performance and reliability.
 
 1. **Visit the live demo or clone the repository:**
    ```bash
-   git clone https://github.com/your-username/geo-tracker.git
+   git clone https://github.com/KeepSerene/ip-address-tracker-fem.git
    cd geo-tracker
    ```
 2. **Install dependencies:**
@@ -80,16 +74,12 @@ _Dhrubajyoti Bhattacharjee_
 - GitHub: [KeepSerene](https://github.com/KeepSerene)
 - LinkedIn: [Dhrubajyoti Bhattacharjee](https://www.linkedin.com/in/dhrubajyoti-bhattacharjee-320822318/)
 
----
-
 ## ✨ Features
 
 - Automatically fetches your IP address and location on page load.
 - Search for any IP address or domain.
 - Interactive map with markers for precise geolocation.
 - Displays key information like city, country, timezone, and ISP.
-
----
 
 ## 🌟 Future Updates
 
@@ -98,13 +88,9 @@ _Dhrubajyoti Bhattacharjee_
 - Implement dark mode.
 - Add a history feature to track past searches.
 
----
-
 ## 🛠️ Contribution
 
 Contributions are welcome! Feel free to submit issues or pull requests to enhance the app.
-
----
 
 ## 📜 License
 

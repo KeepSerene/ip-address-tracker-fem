@@ -8,7 +8,7 @@ function Hero({ ipData, fetchIpData, isLoading, error }) {
   return (
     <div className="hero">
       <article className="hero-wrapper | wrapper">
-        <h1 className="hero-title">IP Address Tracker</h1>
+        <h1 className="hero-title">GeoTracker</h1>
 
         <IpSearch fetchIpData={fetchIpData} />
 
