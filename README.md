@@ -6,7 +6,7 @@ GeoTracker is a powerful React-based application that allows users to track IP a
 
 ## 🚀 Live Demo
 
-[GeoTracker Live](https://your-live-demo-link.com)
+[GeoTracker Live](https://geo-tracker-kappa.vercel.app/)
 
 ## 📸 Screenshot
 
