@@ -37,7 +37,7 @@ Built using modern web technologies to ensure performance and reliability.
 1. **Visit the live demo or clone the repository:**
    ```bash
    git clone https://github.com/KeepSerene/ip-address-tracker-fem.git
-   cd geo-tracker
+   cd ip-address-tracker
    ```
 2. **Install dependencies:**
 
